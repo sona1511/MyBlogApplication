@@ -1,0 +1,50 @@
+<div class="main">
+
+  <!-- Sign up form -->
+  <section class="signup">
+    <div class="container">
+      <div class="signup-content">
+        <div class="signup-form">
+          <h2 class="form-title">Sign up</h2>
+          <form ngNativeValidate (ngSubmit)="onSubmit()" class="register-form" id="register-form">
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-user"></i></label>
+              <input type="text" id="name" name="name" [(ngModel)]="register.name" placeholder="Enter your name"
+                maxlength="32" />
+            </div>
+            <div class="form-group">
+              <label for="re-pass"><i class="fa-solid fa-briefcase"></i></label>
+              <input type="text" id="about" name="about" [(ngModel)]="register.about"
+                placeholder="Enter your profession" maxlength="32" />
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fa-solid fa-envelope"></i></label>
+              <input type="email" id="email" name="email" [(ngModel)]="register.email" placeholder="Enter email Id "
+                required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                oninvalid="this.setCustomValidity('Please provide valid email')" onkeyup="setCustomValidity('')" />
+            </div>
+            <div class="form-group">
+              <label for="pass"><i class="fa-solid fa-lock"></i></label>
+              <input [type]="changetype?'password':'text'" id="password" name="password" [(ngModel)]="register.password"
+                placeholder="Enter Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+                oninvalid="this.setCustomValidity('Must contain at least one  number and one uppercase and lowercase letter, and at least 5 or more characters')"
+                onkeyup="setCustomValidity('')" />
+            </div>
+            <span class="eyeicon1" (click)="viewpass()"><i [ngClass]="visible?'fa fa-eye':'fa fa-eye-slash'"
+              style='font-size:15px'></i>
+          </span>
+
+            <div class="form-group form-button">
+              <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+            </div>
+          </form>
+        </div>
+        <div class="signup-image">
+          <figure><img src="../../../assets/images/signup-image.jpg" alt="sing up image"></figure>
+          <a href="/login" class="signup-image-link">Back to Login?</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

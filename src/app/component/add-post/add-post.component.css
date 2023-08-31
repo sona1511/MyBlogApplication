@@ -1,0 +1,83 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("../../../assets/blog17.webp");
+
+  /* Control the height of the image */
+  min-height: 540px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 82px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type=content], input[type=content] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=file]:focus, input[type=file]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(14, 75, 145);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.h1, h1
+{
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+
+.img-fluid
+{
+  max-width: 20%;
+}

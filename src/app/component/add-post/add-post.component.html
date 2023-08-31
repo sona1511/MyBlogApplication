@@ -1,0 +1,19 @@
+<div class="bg-img">
+  <form ngNativeValidate action="/action_page.php" class="container" (ngSubmit)="addPost()">
+    <h1>Create New Post</h1>
+    <input type="text" required id="category" name="category" [(ngModel)]="postPayload.category" class="form-control"
+      placeholder="Category" maxlength="32">
+
+    <input type="text" required id="title" name="title" [(ngModel)]="postPayload.title" class="form-control"
+      placeholder="Title" maxlength="32">
+
+    <textarea name="content" class="content" [(ngModel)]="postPayload.content" class="form-control"
+      placeholder="Content" maxlength="500"></textarea>
+    <br>
+    <input type="file" (change)="onChange($event)" (change)="showPreview($event)" id="file" name="file" [(ngModel)]="postPayload.imageName"
+      class="form-control" placeholder="Image" accept="image/png, image/gif, image/jpeg" />
+    <img [src]="imgSrc" class="img-fluid">
+    <br>
+    <button type="submit" class="btn">Add Post</button>
+  </form>
+</div>

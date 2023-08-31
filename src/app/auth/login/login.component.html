@@ -1,0 +1,41 @@
+<div class="main">
+  <!-- Sing in  Form -->
+  <section class="sign-in">
+    <div class="container">
+      <div class="signin-content">
+        <div class="signin-image">
+          <figure><img src="../../../assets/images/signin-image.jpg" alt="sing up image"></figure>
+        </div>
+
+        <div class="signin-form">
+          <h2 class="form-title">Sign in</h2>
+          <form ngNativeValidate (ngSubmit)="onSubmit()" class="register-form" id="login-form">
+            <div class="form-group">
+              <label for="your_name"><i class="fa-solid fa-envelope"></i></label>
+              <input type="text" id="username" name="username" [(ngModel)]="login.username" required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                oninvalid="this.setCustomValidity('Please provide valid email')" onkeyup="setCustomValidity('')"
+                placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <label for="your_pass"><i class="fa-solid fa-lock"></i></label>
+              <input [type]="changetype?'password':'text'" id="password" name="password" [(ngModel)]="login.password"
+                placeholder="Password" required />
+
+            </div>
+            <span class="eyeicon1" (click)="viewpass()"><i [ngClass]="visible?'fa fa-eye':'fa fa-eye-slash'"
+                style='font-size:15px'></i>
+            </span>
+            <div class="form-group form-button">
+              <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+            </div>
+          </form>
+          <div class="social-login">
+            <span class="social-label">Don't have an account yet?</span>
+            <a class="hrefe" href="/signup">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

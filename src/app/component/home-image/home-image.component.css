@@ -1,0 +1,23 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+ 
+.home-img{
+    height: 561px;
+    width: 100%;
+}
+h1{
+    color: ivory;
+    text-align: right;
+    margin: 300px 200px 0 0;
+}
+.under-text{
+    color:ivory;
+    text-align: right;
+    margin: 10px 200px;
+}
+.text-div{
+    width: 100%;
+    position: absolute;
+}

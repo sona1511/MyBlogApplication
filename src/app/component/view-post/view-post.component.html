@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <div class="row">
+          <div class="col-4" *ngFor="let posts  of post">
+            <div class="card-body">
+  
+              <a routerLink="/post/{{posts.postId}}" class="effect-lily tm-post-link tm-pt-60">
+                <div class="tm-post-link-inner">
+                  <img src="http://localhost:8022/api/v1/post/image/{{posts.imageName}}" alt="Image" class="img-fluid">
+                </div> </a>
+                <i (click)="deletePost(posts.postId)" class="delete fa-solid fa-trash"></i>
+    
+                <h5 class="card-title" class="tm-pt-30  tm-post-title">{{posts.title}}</h5>
+              
+              <div class="d-flex justify-content-between tm-pt-45">
+                <span class="text-secondary">{{posts.category}}</span>
+                <span class="tm-color-primary">{{posts.addedDate}}</span>
+              </div>
+              <div class="d-flex justify-content-between tm-pt-45">
+                  <a routerLink="/posts/{{posts.postId}}" class="effect-lily tm-post-link tm-pt-60">
+                    <h6 class="text-muted"
+                    class="text-secondary">Read the article &nbsp;<i class="fa-solid fa-arrow-right"></i></h6>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

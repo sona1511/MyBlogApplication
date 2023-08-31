@@ -1,0 +1,12 @@
+/* Modify the background color */
+.navbar-custom {
+	background-color: rgba(61, 53, 53, 0.808);
+}
+
+.navbar{    
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99; 
+    background-color: #181851;
+}
