@@ -10,7 +10,6 @@ import { LoginComponent } from './auth/login/login.component';
 import { AddPostComponent } from './component/add-post/add-post.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RegisterSuccessComponent } from './component/register-success/register-success.component';
 import {NgxWebstorageModule} from 'ngx-webstorage';
 import { SidenavbarComponent } from './component/sidenavbar/sidenavbar.component';
 import { UserDashboardComponent } from './component/user-dashboard/user-dashboard.component';
@@ -34,7 +33,6 @@ import { HomeImageComponent } from './component/home-image/home-image.component'
     RegisterComponent,
     LoginComponent,
     AddPostComponent,
-    RegisterSuccessComponent,
     SidenavbarComponent,
     UserDashboardComponent,
     AccountDetailsComponent,

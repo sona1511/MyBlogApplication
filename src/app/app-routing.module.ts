@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AddPostComponent } from './component/add-post/add-post.component';
-import { RegisterSuccessComponent } from './component/register-success/register-success.component';
 import { AuthGuard } from './auth.guard';
 import { HomeComponent } from './component/home/home.component';
 import { UserDashboardComponent } from './component/user-dashboard/user-dashboard.component';
