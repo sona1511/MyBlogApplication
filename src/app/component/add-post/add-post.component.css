@@ -25,7 +25,7 @@ body, html {
 .container {
   position: absolute;
   right: 0;
-  margin: 82px;
+  margin: 71px;
   max-width: 500px;
   padding: 16px;
   background-color: white;
@@ -79,5 +79,5 @@ input[type=file]:focus, input[type=file]:focus {
 
 .img-fluid
 {
-  max-width: 20%;
+  max-width: 15%;
 }

@@ -16,7 +16,10 @@
             </div>
         </ul>
         <div *ngIf="authService.isAuthenticated()">
-            <b style="margin-left: 76px; color: white;  text-shadow: 2px 2px 4px #000000; font-family: cursive">Welcome
+            <b style="margin-left: 76px; color: white;  text-shadow: 2px 2px 4px #000000; font-family: cursive; position: absolute;
+            top: 13px;
+            font-size: 19px;
+            right: 131px;">Welcome
                 {{myName}}</b>
         </div>
         <div class="col-md-3" *ngIf="authService.isAuthenticated()">
