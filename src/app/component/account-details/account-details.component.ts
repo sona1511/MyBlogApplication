@@ -25,10 +25,10 @@ export class AccountDetailsComponent implements OnInit {
     let name = JSON.stringify(sessionStorage.getItem('name'));
     let actName = name.replace(/[^\w\s]/gi, "");
     this.myName = actName;
-    //let email = JSON.stringify(sessionStorage.getItem('email'));
-    //let actEmail = email.replace(/[^\w\s]/gi, "");
-    //  this.myEmail = actEmail;
-    this.myEmail = sessionStorage.getItem('email')
+    let email = JSON.stringify(sessionStorage.getItem('email'));
+    let actEmail = email.replace(/[\\""$%]/g, "");
+    this.myEmail = actEmail;
+    //  this.myEmail = sessionStorage.getItem('email')
     let about = JSON.stringify(sessionStorage.getItem('about'));
     let actAbout = about.replace(/[^\w\s]/gi, "");
     this.myAbout = actAbout;
